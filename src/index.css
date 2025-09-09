@@ -171,4 +171,12 @@ Primary: Dark Green | Secondary: Gold | Modern, Clean, Mobile-First
   .shadow-glow {
     box-shadow: var(--shadow-glow);
   }
+  
+  /* Grid pattern for map background */
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(158, 158, 158, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(158, 158, 158, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
 }

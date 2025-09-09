@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/pama-button";
 import { Card } from "@/components/ui/card";
 import { Package, Truck, Settings, MapPin, Clock } from "lucide-react";
 import pamaLogo from "@/assets/pama-logo.png";
+import { MapView } from "@/components/common/MapView";
 
 export default function Home() {
   const [userType, setUserType] = useState<'customer' | 'agent' | null>(null);
@@ -76,6 +77,11 @@ export default function Home() {
               </div>
               <p className="text-sm text-muted-foreground">Easy to use</p>
             </div>
+          </div>
+
+          {/* Service Area Map */}
+          <div className="mt-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <MapView />
           </div>
         </div>
       </div>
